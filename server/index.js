@@ -12,6 +12,14 @@ database.on('error', (error) => {
 database.once('connected', () => {
     console.log('Database Connected');
 })
+app.get('/test',async(req,res)=>{
+    const user = await new User({
+        name: "req.body.name",
+        email:"req.body.email",
+        password: "req.body.password"
+    }).save();
+    res.status(200).json(user);
+});
 
 
 
