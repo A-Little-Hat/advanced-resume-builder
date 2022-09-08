@@ -8,7 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^35.1.0",
+    "@ckeditor/ckeditor5-react": "^5.0.2",
     "react": "^18.0.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
